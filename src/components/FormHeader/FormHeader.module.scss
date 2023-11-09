@@ -1,0 +1,19 @@
+@import '@styles/base';
+
+.header {
+  @include flex-column;
+  gap: 0.5rem;
+
+  &__title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: $marine-blue;
+    @include apply-at-lg-size {
+      font-size: 2rem;
+    }
+  }
+
+  &__description {
+    color: $cool-gray;
+  }
+}

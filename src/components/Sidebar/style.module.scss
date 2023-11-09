@@ -1,0 +1,49 @@
+@import '@styles/base';
+.sidebar {
+  display: none;
+  @include apply-at-lg-size {
+    display: block;
+    background-image: url('@static/images/bg-sidebar-desktop.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.75rem;
+  }
+}
+
+.container {
+  @include flex-column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.step {
+  @include flex-items-center;
+  gap: 1rem;
+
+  &__count {
+    @include flex-center;
+    @include box(2rem);
+    border-radius: 50%;
+    border: 1px solid $light-blue;
+    color: $light-blue;
+    font-weight: 500;
+  }
+  &__active {
+    background-color: $light-blue;
+    color: $marine-blue;
+  }
+  &__content {
+    text-transform: uppercase;
+  }
+
+  &__number {
+    font-size: 0.75rem;
+    color: $cool-gray;
+  }
+  &__title {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: $magnolia;
+  }
+}

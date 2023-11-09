@@ -1,0 +1,61 @@
+@import '@styles/base';
+.addon {
+  @include flex-column;
+  width: 100%;
+  gap: 1rem;
+}
+
+.card {
+  @include flex-items-center;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: 1px solid $cool-gray;
+  padding: 1rem;
+  cursor: pointer;
+  &:hover {
+    border-color: $marine-blue;
+  }
+
+  &__left {
+    @include flex-items-center;
+    gap: 1rem;
+  }
+
+  &__checkbox {
+    @include box(1.25rem);
+  }
+
+  &__text {
+    @include flex-column;
+    gap: 0.25rem;
+  }
+  &__title {
+    color: $marine-blue;
+    font-weight: 700;
+    font-size: 0.9rem;
+    @include apply-at-lg-size {
+      font-size: 1rem;
+    }
+  }
+
+  &__description {
+    color: $cool-gray;
+    font-size: 0.8rem;
+    @include apply-at-lg-size {
+      font-size: 0.9rem;
+    }
+  }
+
+  &__price {
+    color: $marine-blue;
+    font-size: 0.85rem;
+    @include apply-at-lg-size {
+      font-size: 1rem;
+    }
+  }
+
+  &__selected {
+    border-color: $purplish-blue;
+    background-color: $magnolia;
+  }
+}

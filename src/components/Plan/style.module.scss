@@ -1,0 +1,103 @@
+@import '@styles/base';
+
+.plan {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1rem;
+  @include apply-at-lg-size {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: none;
+  }
+  &__card {
+    @include flex-items-center;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid $cool-gray;
+    border-radius: 5px;
+    cursor: pointer;
+    @include apply-at-lg-size {
+      @include flex-column;
+      align-items: start;
+      gap: 3rem;
+    }
+    &:hover {
+      border-color: $purplish-blue;
+    }
+  }
+  &__icon {
+    @include box(2.5rem);
+  }
+  &__content {
+    @include flex-column;
+    gap: 0.25rem;
+    &__title {
+      color: $marine-blue;
+      font-weight: 700;
+    }
+    &__price {
+      font-size: 0.85rem;
+      color: $cool-gray;
+      font-weight: 500;
+    }
+    &__free {
+      font-size: 0.75rem;
+      color: $marine-blue;
+    }
+  }
+}
+
+.option {
+  @include flex-center;
+  background-color: $alabaster;
+  border-radius: 5px;
+  gap: 2rem;
+  padding: 1rem;
+  color: $cool-gray;
+  font-size: 0.9rem;
+  @include apply-at-lg-size {
+    font-size: 1rem;
+  }
+  &__toggle {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 20px;
+  }
+  &__checkbox {
+    opacity: 0;
+    @include box(0);
+
+    &:checked + .option__slider::before {
+      transform: translateX(14px);
+    }
+  }
+  &__slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $marine-blue;
+    transition: 0.4s cubic-bezier(0, 1, 0.5, 1);
+    border-radius: 34px;
+    &::before {
+      position: absolute;
+      content: '';
+      @include box(12px);
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      transition: 0.4s cubic-bezier(0, 1, 0.5, 1);
+      border-radius: 50%;
+    }
+  }
+  &__selected {
+    color: $marine-blue;
+  }
+}
+
+.active {
+  background-color: $magnolia;
+  border-color: $purplish-blue;
+}

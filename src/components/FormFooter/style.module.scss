@@ -1,0 +1,54 @@
+@import '@styles/base';
+
+.footer {
+  @include flex-items-center;
+  justify-content: space-between;
+  position: fixed;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  @include apply-at-lg-size {
+    padding: 0;
+    margin-top: 2.5rem;
+    position: relative;
+  }
+  &__button_left {
+    color: $cool-gray;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+
+    &:hover {
+      color: $marine-blue;
+    }
+  }
+  &__button_right {
+    color: $magnolia;
+    background-color: $marine-blue;
+    border-radius: 10px;
+    padding: 0.85rem 1.75rem;
+    width: fit-content;
+    cursor: pointer;
+    margin-left: auto;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+    border: none;
+    &:hover {
+      opacity: 75%;
+    }
+  }
+  &__button_confirm {
+    background-color: $purplish-blue;
+
+    align-self: end;
+    &:hover {
+      background-color: $pastel-blue;
+    }
+  }
+}

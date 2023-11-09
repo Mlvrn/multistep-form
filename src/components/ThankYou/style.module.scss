@@ -1,0 +1,23 @@
+@import '@styles/base';
+
+.thankyou {
+  @include flex-center-column;
+  margin: auto;
+  gap: 2rem;
+  &__icon {
+    @include box(4rem);
+    @include apply-at-lg-size {
+      @include box(5rem);
+    }
+  }
+  &__title {
+    color: $marine-blue;
+    font-size: 1.75rem;
+    font-weight: 700;
+  }
+  &__message {
+    text-align: center;
+    line-height: 1.5rem;
+    color: $cool-gray;
+  }
+}

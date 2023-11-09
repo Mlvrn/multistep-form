@@ -1,0 +1,48 @@
+@import '@styles/base';
+
+.form {
+  @include flex-column;
+  gap: 1rem;
+  &__field {
+    @include flex-column;
+    gap: 0.5rem;
+  }
+  &__label_container {
+    @include flex-items-center;
+    justify-content: space-between;
+    font-size: 0.9rem;
+  }
+  &__label {
+    color: $marine-blue;
+  }
+  &__error {
+    color: $strawberry-red;
+    font-weight: 700;
+  }
+  &__input {
+    border-radius: 5px;
+    border: 1px solid $cool-gray;
+    outline: none;
+    font-size: 1rem;
+    padding: 0.75rem;
+    color: $marine-blue;
+    font-weight: 500;
+    &:focus {
+      border-color: $purplish-blue;
+    }
+    &__error {
+      border-color: $strawberry-red;
+    }
+  }
+}
+
+.button {
+  color: $magnolia;
+  background-color: $marine-blue;
+  border-radius: 10px;
+  padding: 0.85rem 1.75rem;
+  width: fit-content;
+  align-self: end;
+  margin-top: 3rem;
+  font-weight: 500;
+}

@@ -1,0 +1,63 @@
+export default {
+  app_greeting: 'Hai dari Web!',
+  app_title_header: 'Bootcamp',
+  app_not_found: 'Halaman tidak ditemukan',
+  app_lang_id: 'Bahasa Indonesia',
+  app_lang_en: 'Bahasa Inggris',
+  app_popup_error_title: 'Terjadi kesalahan!',
+  app_popup_error_message: 'Maaf, telah terjadi kesalahan. Silakan coba beberapa saat lagi',
+  app_popup_close_button_label: 'Tutup',
+
+  app_step_1: 'Langkah 1',
+  app_step_2: 'Langkah 2',
+  app_step_3: 'Langkah 3',
+  app_step_4: 'Langkah 4',
+  app_sidebar_info: 'Info Anda',
+  app_sidebar_plan: 'Pilih paket',
+  app_sidebar_addon: 'Tambahan',
+  app_sidebar_summary: 'Evaluasi',
+
+  app_info_header_title: 'Info Pribadi',
+  app_info_header_description: 'Silakan berikan nama, alamat email, dan nomor telepon Anda.',
+  app_info_name: 'Nama',
+  app_info_email: 'Alamat email',
+  app_info_phone: 'Nomor telepon',
+  app_field_required: 'Kolom ini wajib diisi',
+
+  app_plan_header_title: 'Pilih paket Anda',
+  app_plan_header_description: 'Anda memiliki pilihan pembayaran bulanan atau tahunan.',
+  app_plan_arcade: 'Arcade',
+  app_plan_arcade_price: '$9/bulan',
+  app_plan_advanced: 'Advanced',
+  app_plan_advanced_price: '$12/bulan',
+  app_plan_pro: 'Pro',
+  app_plan_pro_price: '$15/bulan',
+  app_plan_monthly: 'Bulanan',
+  app_plan_yearly: 'Tahunan',
+
+  app_addon_header_title: 'Pilih tambahan',
+  app_addon_header_description: 'Tambahan membantu meningkatkan pengalaman bermain game Anda.',
+  app_addon_1_title: 'Layanan online',
+  app_addon_1_description: 'Akses ke permainan multiplayer',
+  app_addon_2_title: 'Penyimpanan lebih besar',
+  app_addon_2_description: 'Tambahan 1TB simpanan cloud',
+  app_addon_3_title: 'Profil yang dapat disesuaikan',
+  app_addon_3_description: 'Tema kustom pada profil Anda',
+
+  app_summary_header_title: 'Selesai',
+  app_summary_header_description: 'Periksa sekali lagi apakah semuanya terlihat baik sebelum mengonfirmasi.',
+
+  app_button_next: 'Lanjut',
+  app_button_previous: 'Kembali',
+  app_button_confirm: 'Konfirmasi',
+
+  app_change_link: 'Ubah',
+  app_total: 'Total',
+  app_per_monthly: '(per bulan)',
+  app_per_yearly: '(per tahun)',
+  app_free_month: '2 bulan gratis',
+
+  app_thank_you: 'Terima Kasih!',
+  app_thank_you_message:
+    'Terima kasih telah mengonfirmasi langganan Anda! Kami harap Anda senang menggunakan platform kami. Jika Anda membutuhkan bantuan, jangan ragu untuk mengirim email kepada kami di support@loremgaming.com.',
+};
