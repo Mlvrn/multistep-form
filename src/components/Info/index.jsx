@@ -48,6 +48,8 @@ const Info = ({ intl: { formatMessage }, user }) => {
 
     if (!formData.phone.trim()) {
       errors.phoneError = 'Phone is required';
+    } else if (!/^\d+$/.test(formData.phone)) {
+      errors.phoneError = 'Invalid phone number';
     }
 
     if (Object.keys(errors).length > 0) {
